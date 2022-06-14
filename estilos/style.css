@@ -297,7 +297,7 @@ img {
   
     .gallery .gallery__img:nth-of-type(2) {
       grid-column: 1 / 7;
-      grid-rows: 2 / 3;
+      grid-row: 2 / 3;
     }
   
     .gallery .gallery__img:nth-of-type(3) {
