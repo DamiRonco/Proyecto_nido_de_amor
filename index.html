@@ -4,105 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nido de Amor Deco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos/style.css">
-    <title>Nido de Amor Deco</title>
 </head>
-<body>
-  <header>
-      <!--navegador de navegacion-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"><img class="logo" src="./assets/img/logo.jpg" alt="logo nido de amor"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+</body>
+    <header>
+      <picture class="header__logo">
+        <img class="header__img" src="./assets/img/logo.jpg" alt="logo nido de amor deco">
+      </picture>
+      <nav class="navigation">
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="./pages/galeria.html">Galeria</a></li>
+          <li class="menu__item"><a class="menu__link" href="./pages/nosotros.html">Nosotros</a></li>
+          <li class="menu__item"><a class="menu__link" href="./pages/faqs.html">FAQs</a></li>
+          <li class="menu__item"><a class="menu__link" href="./pages/contacto.html">Contacto</a></li>
+      </ul>
+      </nav>
+    </header>
+    <!--Seccion main-->
+    <main class="container1">
+      <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/maceta1.jpg" class="d-block w-100" alt="macetas">
+            </div>
+          <div class="carousel-item">
+            <img src="./assets/img/botella4.jpg" class="d-block w-100" alt="Botellas">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/mate1.jpg" class="d-block w-100" alt="mate">
+          </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-5">
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/galeria.html">Galeria</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/faqs.html">FAQs</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
-      </div>
-    </nav>
-  </header>
-    <!--Seccion main--> 
-  <main>
-    <!--seccion banner-->
-    <div class="container">
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/img/maceta5.jpg" class="d-block w-100" alt="macetas">
-          </div>
-        <div class="carousel-item">
-          <img src="./assets/img/botella5.jpg" class="d-block w-100" alt="Botellas">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/img/mate1.jpg" class="d-block w-100" alt="mate">
-        </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-    <!--cards-->
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="card">
-          <img class="img-card" src="./assets/img/maceta5.jpg" alt="" class="maceta">
-            <div class="card-body">
-            <h5 class="card-title">Macetas</h5>
-            <p class="card-text">Las macetas más lindas</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card">
-          <img class="img-card" src="./assets/img/mate1.jpg" alt="" class="mate">
-            <div class="card-body">
-            <h5 class="card-title">Mates</h5>
-            <p class="card-text">Los más cancheros</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
-          </div>
-        </div>  
-        <div class="col-sm-4">
-          <div class="card">
-          <img class="img-card" src="./assets/img/botella5.jpg" alt="" class="productos__img">
-            <div class="card-body">
-            <h5 class="card-title">Botellas</h5>
-            <p class="card-text">Una para cada ocasión</p>
-            <a href="#" class="btn btn-primary">Comprar</a>
-            </div>
-          </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-    </div>
-  </main>
-  <!--Seccion footer-->
-  <footer class="footer">
-    <a href="http://www.facebook.com" target="blank"><img src="./assets/img/facebook.png" alt="logo facebook"></a>
-    <a href="http://www.instagram.com" target="blank"><img src="./assets/img/instragram.png" alt="logo facebook"></a>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <section id="cards" class="cards">
+        <articule class="box">
+          <picture class="box__img">
+            <img src="./assets/img/maceta5.jpg" alt="maceta">
+          </picture>
+          <div class="box__info">
+            <h2>Macetas</h2>
+            <h3>Las macetas más lindas</h3>
+          </div>
+        </articule>
+        <articule class="box">
+          <picture class="box__img">
+            <img src="./assets/img/mate1.jpg" alt="mate">
+          </picture>
+          <div class="box__info">
+            <h2>Mates</h2>
+            <h3>Los más cancheros</h3>
+          </div>
+        </articule>
+        <articule class="box">
+          <picture class="box__img">
+            <img src="./assets/img/botella5.jpg" alt="botella">
+          </picture>
+          <div class="box__info">
+            <h2>Botellas</h2>
+            <h3>Una para cada ocasión</h3>
+          </div>
+        </articule>
+      </section>
+      </main>
+      
+      <!--Seccion footer-->
+      <footer class="footer">
+        <a href="http://www.facebook.com" target="blank"><img src="./assets/img/facebook.png" alt="logo facebook"></a>
+        <a href="http://www.instagram.com" target="blank"><img src="./assets/img/instagram.png" alt="logo facebook"></a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
