@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ee9ca7;
+  background: -webkit-linear-gradient(to right, #686263, #ee9ca7);
+  background: linear-gradient(to right, #ffdde1, #ee9ca7); }
+  header .header__img {
+    width: 100px;
+    height: 100px; }
+  header nav .menu {
+    display: flex;
+    gap: 2rem; }
+    header nav .menu .menu__item a {
+      text-decoration: none;
+      font-size: 30px;
+      color: #000; }
+    header nav .menu .menu__item a:hover {
+      color: #f854a0;
+      font-size: 50px; }
